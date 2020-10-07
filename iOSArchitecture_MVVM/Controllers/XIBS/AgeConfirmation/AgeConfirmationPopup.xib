@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSansCyrl_900.otf">
+            <string>MuseoSansCyrl-900</string>
+        </array>
+        <array key="museosanscyrl_500.ttf">
+            <string>MuseoSansCyrl-500</string>
+        </array>
+        <array key="museosanscyrl_700.ttf">
+            <string>MuseoSansCyrl-700</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgeConfirmationPopup" customModule="LottaWins" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmBtn" destination="ERN-ru-cSY" id="AEP-8h-GbF"/>
+                <outlet property="declineBtn" destination="ltD-uU-opJ" id="yyc-Sb-vul"/>
+                <outlet property="messageLbl" destination="sCS-eL-we9" id="mng-5S-p9L"/>
+                <outlet property="popView" destination="6dM-mT-PFi" id="d6L-Wn-dES"/>
+                <outlet property="titleLbl" destination="C1Q-Rs-FEt" id="gKu-X9-IG8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-mT-PFi">
+                    <rect key="frame" x="30" y="223.5" width="315" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm your age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1Q-Rs-FEt">
+                            <rect key="frame" x="68" y="15" width="179" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="pBX-t4-U7I"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSansCyrl-900" family="Museo Sans Cyrl" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today’s giveaway requires contestants to be 18+." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-eL-we9">
+                            <rect key="frame" x="68" y="50" width="179" height="43"/>
+                            <fontDescription key="fontDescription" name="MuseoSansCyrl-500" family="Museo Sans Cyrl" pointSize="14"/>
+                            <color key="textColor" red="0.098039215686274508" green="0.078431372549019607" blue="0.20392156862745098" alpha="0.75437389964788737" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-ru-cSY" customClass="CustomButton" customModule="LottaWins" customModuleProvider="target">
+                            <rect key="frame" x="22" y="115" width="270" height="50"/>
+                            <color key="backgroundColor" red="0.027450980390000001" green="0.85098039219999999" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="VG9-LM-Hn1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSansCyrl-900" family="Museo Sans Cyrl" pointSize="17"/>
+                            <state key="normal" title="I’m 18+">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confirm:" destination="-1" eventType="touchUpInside" id="xYH-QK-hpz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltD-uU-opJ">
+                            <rect key="frame" x="22" y="165" width="270" height="42"/>
+                            <fontDescription key="fontDescription" name="MuseoSansCyrl-700" family="Museo Sans Cyrl" pointSize="13"/>
+                            <state key="normal" title="I’m under 18">
+                                <color key="titleColor" red="0.098039215690000001" green="0.078431372550000003" blue="0.20392156859999999" alpha="0.75437389960000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="decline:" destination="-1" eventType="touchUpInside" id="pIq-7h-Gm2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ltD-uU-opJ" firstAttribute="height" secondItem="ERN-ru-cSY" secondAttribute="height" constant="-8" id="0DW-LI-hup"/>
+                        <constraint firstItem="ERN-ru-cSY" firstAttribute="top" secondItem="sCS-eL-we9" secondAttribute="bottom" constant="22" id="0t2-cc-ziN"/>
+                        <constraint firstItem="C1Q-Rs-FEt" firstAttribute="leading" secondItem="6dM-mT-PFi" secondAttribute="leading" constant="68" id="2cA-in-hkW"/>
+                        <constraint firstItem="ERN-ru-cSY" firstAttribute="leading" secondItem="6dM-mT-PFi" secondAttribute="leading" constant="22" id="DGA-qN-cRi"/>
+                        <constraint firstItem="ltD-uU-opJ" firstAttribute="leading" secondItem="ERN-ru-cSY" secondAttribute="leading" id="PhG-2m-JhY"/>
+                        <constraint firstItem="ERN-ru-cSY" firstAttribute="centerX" secondItem="ltD-uU-opJ" secondAttribute="centerX" id="TEe-e7-2fQ"/>
+                        <constraint firstItem="ltD-uU-opJ" firstAttribute="trailing" secondItem="ERN-ru-cSY" secondAttribute="trailing" id="Tu1-e0-W7w"/>
+                        <constraint firstItem="C1Q-Rs-FEt" firstAttribute="top" secondItem="6dM-mT-PFi" secondAttribute="top" constant="15" id="URp-FC-Raf"/>
+                        <constraint firstAttribute="height" constant="220" id="UqR-4p-M5m"/>
+                        <constraint firstItem="sCS-eL-we9" firstAttribute="leading" secondItem="C1Q-Rs-FEt" secondAttribute="leading" id="hZP-9M-CEi"/>
+                        <constraint firstAttribute="trailing" secondItem="C1Q-Rs-FEt" secondAttribute="trailing" constant="68" id="keL-p6-ahr"/>
+                        <constraint firstItem="sCS-eL-we9" firstAttribute="top" secondItem="C1Q-Rs-FEt" secondAttribute="bottom" constant="14" id="mKa-Nl-faT"/>
+                        <constraint firstItem="ltD-uU-opJ" firstAttribute="top" secondItem="ERN-ru-cSY" secondAttribute="bottom" id="qGD-8S-qnz"/>
+                        <constraint firstItem="sCS-eL-we9" firstAttribute="trailing" secondItem="C1Q-Rs-FEt" secondAttribute="trailing" id="vC5-T5-Uoa"/>
+                        <constraint firstAttribute="trailing" secondItem="ERN-ru-cSY" secondAttribute="trailing" constant="23" id="wyf-c7-dUv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69938380281690138" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6dM-mT-PFi" secondAttribute="trailing" constant="30" id="2H7-Ao-GUk"/>
+                <constraint firstItem="6dM-mT-PFi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7cY-i5-o3u"/>
+                <constraint firstItem="6dM-mT-PFi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M7X-qt-REi"/>
+                <constraint firstItem="6dM-mT-PFi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Pox-WH-UOK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="83.208395802098963"/>
+        </view>
+    </objects>
+</document>

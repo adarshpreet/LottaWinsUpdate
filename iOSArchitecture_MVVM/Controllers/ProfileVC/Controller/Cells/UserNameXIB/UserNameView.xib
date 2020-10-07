@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Black.ttf">
+            <string>Nunito-Black</string>
+        </array>
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserNameView" customModule="LottaWins" customModuleProvider="target">
+            <connections>
+                <outlet property="doneBtn" destination="Ql9-MF-jGe" id="nkT-Gv-pe8"/>
+                <outlet property="errorLabel" destination="Vt2-f9-q9w" id="HFp-qK-H90"/>
+                <outlet property="userNameFillTF" destination="gbC-6S-3Yb" id="yI7-dp-e0r"/>
+                <outlet property="usernamTF" destination="1HT-Qh-fiN" id="3ws-ss-CaL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserNameView" customModule="LottaWins" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9SL-Ao-nY3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1y-cM-OGf" customClass="EditingView" customModule="LottaWins" customModuleProvider="target">
+                            <rect key="frame" x="41.5" y="291" width="331" height="314"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-FX-Oh8">
+                                    <rect key="frame" x="10" y="20" width="311" height="35.5"/>
+                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="26"/>
+                                    <color key="textColor" red="0.18823529411764706" green="0.10196078431372549" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="new username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-Qh-fiN" customClass="CustomTextField" customModule="LottaWins" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="145.5" width="291" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="YDc-XV-tGk"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Nunito-Black" family="Nunito" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.18431372549019609" green="0.1019607843" blue="0.33333333333333331" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.2196078431372549" green="0.25098039215686274" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="eAY-pZ-SK7"/>
+                                    </connections>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-f9-q9w">
+                                    <rect key="frame" x="20" y="205.5" width="291" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="12"/>
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ql9-MF-jGe" customClass="CustomButton" customModule="LottaWins" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="247" width="291" height="45"/>
+                                    <color key="backgroundColor" red="0.8901960784313725" green="0.13333333333333333" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="X5A-s4-De0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Nunito-Black" family="Nunito" pointSize="15"/>
+                                    <state key="normal" title="Done"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbC-6S-3Yb" customClass="CustomTextField" customModule="LottaWins" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="75.5" width="291" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="lJt-dY-pDz"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.18431372549019609" green="0.10196078431372549" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Nunito-Black" family="Nunito" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.18823529410000001" green="0.1019607843" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.2196078431372549" green="0.25098039215686274" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="VgW-6Y-y29"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="1HT-Qh-fiN" firstAttribute="top" secondItem="gbC-6S-3Yb" secondAttribute="bottom" constant="20" id="1vA-0v-I0c"/>
+                                <constraint firstItem="a0H-FX-Oh8" firstAttribute="leading" secondItem="r1y-cM-OGf" secondAttribute="leading" constant="10" id="2Xz-A8-Ewu"/>
+                                <constraint firstItem="Vt2-f9-q9w" firstAttribute="trailing" secondItem="1HT-Qh-fiN" secondAttribute="trailing" id="6Dq-nX-Zat"/>
+                                <constraint firstItem="Ql9-MF-jGe" firstAttribute="centerX" secondItem="r1y-cM-OGf" secondAttribute="centerX" id="7II-9C-AfQ"/>
+                                <constraint firstAttribute="trailing" secondItem="a0H-FX-Oh8" secondAttribute="trailing" constant="10" id="9TB-Zo-gVw"/>
+                                <constraint firstItem="gbC-6S-3Yb" firstAttribute="centerX" secondItem="r1y-cM-OGf" secondAttribute="centerX" id="I7g-Ly-Djt"/>
+                                <constraint firstItem="1HT-Qh-fiN" firstAttribute="centerX" secondItem="r1y-cM-OGf" secondAttribute="centerX" id="Naz-nL-KHu"/>
+                                <constraint firstItem="Ql9-MF-jGe" firstAttribute="width" secondItem="r1y-cM-OGf" secondAttribute="width" multiplier="0.88" id="R6o-ZY-EVy"/>
+                                <constraint firstItem="1HT-Qh-fiN" firstAttribute="width" secondItem="r1y-cM-OGf" secondAttribute="width" multiplier="0.88" id="RvR-Un-OQz"/>
+                                <constraint firstItem="a0H-FX-Oh8" firstAttribute="top" secondItem="r1y-cM-OGf" secondAttribute="top" constant="20" id="V5n-j4-mjm"/>
+                                <constraint firstItem="Vt2-f9-q9w" firstAttribute="top" secondItem="1HT-Qh-fiN" secondAttribute="bottom" constant="10" id="Yxm-UZ-KKn"/>
+                                <constraint firstItem="a0H-FX-Oh8" firstAttribute="centerX" secondItem="r1y-cM-OGf" secondAttribute="centerX" id="eWp-m3-pvk"/>
+                                <constraint firstItem="gbC-6S-3Yb" firstAttribute="top" secondItem="a0H-FX-Oh8" secondAttribute="bottom" constant="20" id="gAy-yd-4fe"/>
+                                <constraint firstItem="gbC-6S-3Yb" firstAttribute="width" secondItem="r1y-cM-OGf" secondAttribute="width" multiplier="0.88" id="nEJ-Dw-qj6"/>
+                                <constraint firstItem="Vt2-f9-q9w" firstAttribute="leading" secondItem="1HT-Qh-fiN" secondAttribute="leading" id="sIX-c3-g13"/>
+                                <constraint firstAttribute="bottom" secondItem="Ql9-MF-jGe" secondAttribute="bottom" constant="22" id="zYU-g9-CwI"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="r1y-cM-OGf" firstAttribute="centerX" secondItem="9SL-Ao-nY3" secondAttribute="centerX" id="4Zu-7z-1ea"/>
+                        <constraint firstItem="r1y-cM-OGf" firstAttribute="width" secondItem="9SL-Ao-nY3" secondAttribute="width" multiplier="0.8" id="ajY-VU-5uj"/>
+                        <constraint firstItem="r1y-cM-OGf" firstAttribute="centerY" secondItem="9SL-Ao-nY3" secondAttribute="centerY" id="osT-Dm-9zc"/>
+                        <constraint firstItem="r1y-cM-OGf" firstAttribute="height" secondItem="9SL-Ao-nY3" secondAttribute="height" multiplier="0.35" id="y7d-Ww-9aW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9SL-Ao-nY3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9LP-BI-GCI"/>
+                <constraint firstAttribute="bottom" secondItem="9SL-Ao-nY3" secondAttribute="bottom" id="BLT-KH-BWY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9SL-Ao-nY3" secondAttribute="trailing" id="JrE-7s-epX"/>
+                <constraint firstItem="9SL-Ao-nY3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pr8-tm-QPI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="124"/>
+        </view>
+    </objects>
+</document>

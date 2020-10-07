@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Black.ttf">
+            <string>Nunito-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyWinningsTableViewCell" customModule="LottaWins" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyWinningsTableViewCell" customModule="LottaWins" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Winnings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02C-sg-ynx">
+                        <rect key="frame" x="30" y="5.5" width="152" height="33"/>
+                        <fontDescription key="fontDescription" name="Nunito-Black" family="Nunito" pointSize="24"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.1019607843" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icForward" translatesAutoresizingMaskIntoConstraints="NO" id="E7y-b5-3sL">
+                        <rect key="frame" x="270" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3Ms-1W-s5v"/>
+                            <constraint firstAttribute="height" constant="20" id="d0O-gC-EMM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUG-zV-z2v">
+                        <rect key="frame" x="30" y="41" width="260" height="3"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="xh3-4u-xoM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="02C-sg-ynx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="7bP-UU-B0L"/>
+                    <constraint firstItem="E7y-b5-3sL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="M0Z-Qa-CxR"/>
+                    <constraint firstAttribute="trailing" secondItem="UUG-zV-z2v" secondAttribute="trailing" constant="30" id="Q9M-pK-ml7"/>
+                    <constraint firstItem="02C-sg-ynx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="coO-e7-cQY"/>
+                    <constraint firstAttribute="trailing" secondItem="E7y-b5-3sL" secondAttribute="trailing" constant="30" id="er0-PS-Tkz"/>
+                    <constraint firstItem="UUG-zV-z2v" firstAttribute="leading" secondItem="02C-sg-ynx" secondAttribute="leading" id="kR1-5X-JpR"/>
+                    <constraint firstAttribute="bottom" secondItem="UUG-zV-z2v" secondAttribute="bottom" id="vRo-yL-Nnm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="139" y="125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icForward" width="13" height="24"/>
+    </resources>
+</document>

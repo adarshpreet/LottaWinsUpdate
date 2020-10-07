@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "41C1BDFF-AA7F-489D-83B3-0BB3E58939E0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE9F7BFE-E65C-495E-BF5B-BDD14E83A4BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSArchitecture_MVVM/Controllers/Coins/Coins/MyCoins/Home/Controller/MyCoinsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
+            landmarkName = "acnRollTheDice(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48BB7FAB-8A74-4C19-A262-49314F79484B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSArchitecture_MVVM/Controllers/Coins/Coins/MyCoins/PersonalQuiz/Controller/PersonalityQuizVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "touchesBegan(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0159F0E6-7A42-4ADE-BE14-DAAA018A1383"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSArchitecture_MVVM/Controllers/EnterCodeVC/Controller/EnterCodeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "setUpClosures()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0159F0E6-7A42-4ADE-BE14-DAAA018A1383 - d7b42c2b83ea1b8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LottaWins.EnterCodeVC.setUpClosures() -&gt; ()"
+                  moduleName = "LottaWins"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gurpreetsingh/Documents/LottaWins-master/iOSArchitecture_MVVM/Controllers/EnterCodeVC/Controller/EnterCodeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "0159F0E6-7A42-4ADE-BE14-DAAA018A1383 - c0456a746a0f15b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LottaWins.EnterCodeVC.setUpClosures() -&gt; ()"
+                  moduleName = "LottaWins"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gurpreetsingh/Documents/LottaWins-master/iOSArchitecture_MVVM/Controllers/EnterCodeVC/Controller/EnterCodeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "74">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CDD2D54-943A-40F7-B245-F2ADBA60D4D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSArchitecture_MVVM/Controllers/EnterCodeVC/Controller/EnterCodeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "setUpClosures()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

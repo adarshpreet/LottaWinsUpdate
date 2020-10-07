@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuizSecondCell" id="gTV-IL-0wX" customClass="QuizSecondCell" customModule="LottaWins" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pU-3j-elD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWj-sc-Abn" customClass="CustomButton" customModule="LottaWins" customModuleProvider="target">
+                                <rect key="frame" x="47" y="8.5" width="281" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="crL-5y-MdJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.2196078431372549" green="0.25098039215686274" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yWj-sc-Abn" firstAttribute="centerY" secondItem="4pU-3j-elD" secondAttribute="centerY" id="0iK-3U-pdr"/>
+                            <constraint firstItem="yWj-sc-Abn" firstAttribute="width" secondItem="4pU-3j-elD" secondAttribute="width" multiplier="0.75" id="Kgw-uw-Vya"/>
+                            <constraint firstItem="yWj-sc-Abn" firstAttribute="centerX" secondItem="4pU-3j-elD" secondAttribute="centerX" id="h1a-C9-5by"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4pU-3j-elD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E2A-TX-XIN"/>
+                <constraint firstAttribute="bottom" secondItem="4pU-3j-elD" secondAttribute="bottom" id="iCX-Kn-sxw"/>
+                <constraint firstItem="4pU-3j-elD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jx4-ZP-uze"/>
+                <constraint firstAttribute="trailing" secondItem="4pU-3j-elD" secondAttribute="trailing" id="xva-Z7-4YA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="415" height="71"/>
+            <connections>
+                <outlet property="buttonForQuiz" destination="yWj-sc-Abn" id="g0Q-5J-P9Q"/>
+            </connections>
+            <point key="canvasLocation" x="250.00000000000003" y="125.55803571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" id="KGk-i7-Jjw" customClass="ChatCell" customModule="LottaWins" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijc-UA-5Uy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hq-An-3tg" customClass="CustomImageView" customModule="LottaWins" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3xc-62-8xa"/>
+                                    <constraint firstAttribute="height" constant="30" id="G6U-bO-ttk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1b-FV-eEX">
+                                <rect key="frame" x="55" y="15" width="250" height="16.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a1b-FV-eEX" firstAttribute="leading" secondItem="4hq-An-3tg" secondAttribute="trailing" constant="10" id="GOA-BC-k6K"/>
+                            <constraint firstAttribute="trailing" secondItem="a1b-FV-eEX" secondAttribute="trailing" constant="15" id="HOf-9j-jVd"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="a1b-FV-eEX" secondAttribute="bottom" priority="750" id="Hcj-dh-COt"/>
+                            <constraint firstItem="4hq-An-3tg" firstAttribute="leading" secondItem="ijc-UA-5Uy" secondAttribute="leading" constant="15" id="Vu9-VW-BWB"/>
+                            <constraint firstItem="a1b-FV-eEX" firstAttribute="top" secondItem="4hq-An-3tg" secondAttribute="top" id="ZGO-is-LiT"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4hq-An-3tg" secondAttribute="bottom" priority="250" constant="5" id="fDj-Ig-slI"/>
+                            <constraint firstItem="4hq-An-3tg" firstAttribute="top" secondItem="ijc-UA-5Uy" secondAttribute="top" constant="15" id="uFp-1d-cNg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ijc-UA-5Uy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0eu-fQ-auD"/>
+                    <constraint firstAttribute="trailing" secondItem="ijc-UA-5Uy" secondAttribute="trailing" id="5fY-1b-rnA"/>
+                    <constraint firstItem="ijc-UA-5Uy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="I6v-io-fef"/>
+                    <constraint firstAttribute="bottom" secondItem="ijc-UA-5Uy" secondAttribute="bottom" id="sP6-nZ-GY3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avtarImage" destination="4hq-An-3tg" id="fTw-6T-hum"/>
+                <outlet property="avtarMessage" destination="a1b-FV-eEX" id="oa6-JG-F6b"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="122"/>
+        </tableViewCell>
+    </objects>
+</document>
